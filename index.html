@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Drawing Tools</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Connecting css file -->
+   <link  href="style.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    <div id="pac-container">
+      <input id="pac-input" type="text" placeholder="Enter a location" />
+    </div>
+    <div id="floating-panel">
+      <input id="button" type="button" value="Remove line" />
+    </div>
+    <!-- <button id="button">Remove Shape</button> -->
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+
+    <!-- Linking Google Maps Api -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpUR91oFe5H96DUqGRR5QTTtfb_CIg5h4&callback=initMap&libraries=drawing,places&v=weekly"
+     
+      defer
+    ></script>
+    <!-- Linking js File -->
+    <div id="data1"></div>
+    <script src="index.js"></script>
+   
+
+  </body>
+</html>
